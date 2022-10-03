@@ -10,8 +10,8 @@ class SV_Calculator_Carbon_Fields {
 		if ( ! class_exists( 'Carbon_Fields\Carbon_Fields' ) ) {
 			require SV_CALCULATOR_PLUGIN_DIR . 'vendor/autoload.php';
 			Carbon_Fields\Carbon_Fields::boot();
-			add_action( 'carbon_fields_register_fields', [ $this, 'register_fields' ], 1 );
 		}
+		add_action( 'carbon_fields_register_fields', [ $this, 'register_fields' ], 1 );
 	}
 
 	/**

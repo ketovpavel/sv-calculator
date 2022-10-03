@@ -5,7 +5,7 @@
  * Plugin URI:  https://sovetit.ru/wordpress/plugins/carbon-fields/sv-calculator/
  * Author URI:  https://sovetit.ru/about/
  * Author:      Pavel Ketov
- * Version:     1.2.1
+ * Version:     1.2.2
  * Text Domain: sv_calculator
  * Domain Path: /languages
  */
@@ -27,7 +27,7 @@ if ( ! defined( 'SV_CALCULATOR_PLUGIN_DIR' ) ) {
 	define( 'SV_CALCULATOR_PLUGIN_URL', plugins_url( SV_CALCULATOR_PLUGIN_NAME ) );
 
 	// Версия плагина
-	define( 'SV_CALCULATOR_VERSION', '1.2.1' );
+	define( 'SV_CALCULATOR_VERSION', '1.2.2' );
 }
 
 if ( ! function_exists( 'sv_calculator_setup' ) ) {

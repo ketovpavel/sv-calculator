@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SV Calculator\n"
-"POT-Creation-Date: 2022-10-01 11:11+1000\n"
-"PO-Revision-Date: 2022-10-01 11:11+1000\n"
+"POT-Creation-Date: 2022-10-03 17:07+1000\n"
+"PO-Revision-Date: 2022-10-03 17:08+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -30,7 +30,11 @@ msgstr "1 год"
 msgid "month"
 msgstr "месяц"
 
-#: templates/pawnshop.php:20 templates/pawnshop.php:21
+#: templates/pawnshop.php:20
+msgid "months-a"
+msgstr "месяца"
+
+#: templates/pawnshop.php:21
 msgid "months"
 msgstr "месяцев"
 
@@ -280,7 +284,7 @@ msgstr "Максимальный срок"
 
 #: vendor/sovetit/function/post-meta.php:34
 msgid "1 month"
-msgstr "1 month"
+msgstr "1 месяц"
 
 #: vendor/sovetit/function/post-meta.php:35
 msgid "2 months"
@@ -296,31 +300,31 @@ msgstr "4 месяца"
 
 #: vendor/sovetit/function/post-meta.php:38
 msgid "5 months"
-msgstr "2 months"
+msgstr "5 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:39
 msgid "6 months"
-msgstr "2 months"
+msgstr "6 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:40
 msgid "7 months"
-msgstr "2 months"
+msgstr "7 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:41
 msgid "8 months"
-msgstr "2 months"
+msgstr "8 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:42
 msgid "9 months"
-msgstr "2 months"
+msgstr "9 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:43
 msgid "10 months"
-msgstr "1 months"
+msgstr "10 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:44
 msgid "11 months"
-msgstr "1 months"
+msgstr "11 месяцев"
 
 #: vendor/sovetit/function/post-meta.php:50
 msgid "Default deadline"

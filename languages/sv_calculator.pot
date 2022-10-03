@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: SV Calculator\n"
-"POT-Creation-Date: 2022-10-01 11:11+1000\n"
+"POT-Creation-Date: 2022-10-03 17:08+1000\n"
 "PO-Revision-Date: 2022-09-27 22:55+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,7 +29,11 @@ msgstr ""
 msgid "month"
 msgstr ""
 
-#: templates/pawnshop.php:20 templates/pawnshop.php:21
+#: templates/pawnshop.php:20
+msgid "months-a"
+msgstr ""
+
+#: templates/pawnshop.php:21
 msgid "months"
 msgstr ""
 

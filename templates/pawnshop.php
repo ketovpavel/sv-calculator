@@ -17,7 +17,7 @@ if ( $period_max === 365 ) {
 	$period_max_d = ( $period_max / 30 );
 	$period_month = $period_max_d . ' ' . sv_calculator()->declension( [
 			esc_html__( 'month', SV_CALCULATOR_PLUGIN_DOMAIN ),
-			esc_html__( 'months', SV_CALCULATOR_PLUGIN_DOMAIN ),
+			esc_html__( 'months-a', SV_CALCULATOR_PLUGIN_DOMAIN ),
 			esc_html__( 'months', SV_CALCULATOR_PLUGIN_DOMAIN )
 		], $period_max_d );
 }
