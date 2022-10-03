@@ -52,7 +52,7 @@ class SV_Calculator_Main {
 		// Передаем переменные для localize
 		wp_localize_script( 'jquery', 'localize', [
 			'period_one'        => esc_html__( 'day', SV_CALCULATOR_PLUGIN_DOMAIN ),
-			'period_two'        => esc_html__( 'day', SV_CALCULATOR_PLUGIN_DOMAIN ),
+			'period_two'        => esc_html__( 'day-two', SV_CALCULATOR_PLUGIN_DOMAIN ),
 			'period_all'        => esc_html__( 'days', SV_CALCULATOR_PLUGIN_DOMAIN ),
 		] );
 

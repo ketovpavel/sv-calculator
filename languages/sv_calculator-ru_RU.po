@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SV Calculator\n"
-"POT-Creation-Date: 2022-10-03 17:07+1000\n"
-"PO-Revision-Date: 2022-10-03 17:08+1000\n"
+"POT-Creation-Date: 2022-10-03 17:18+1000\n"
+"PO-Revision-Date: 2022-10-03 17:18+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -242,9 +242,12 @@ msgid "No options are available for this widget."
 msgstr "Для этого виджета нет доступных параметров."
 
 #: vendor/sovetit/classes/SV_Calculator_Main.php:54
-#: vendor/sovetit/classes/SV_Calculator_Main.php:55
 msgid "day"
 msgstr "день"
+
+#: vendor/sovetit/classes/SV_Calculator_Main.php:55
+msgid "day-two"
+msgstr "дня"
 
 #: vendor/sovetit/function/functions.php:12
 msgid "No class: "
