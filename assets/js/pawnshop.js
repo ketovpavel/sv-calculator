@@ -1,5 +1,5 @@
 /* global localize, jQuery */
-const svCalculatorPawnshop = () => {
+const svCalculatorPawnshop = ( args ) => {
 	(function ($) {
 		const sv_calc_ves   = $('#sv-calculator-ves');   // Укажите примерный вес изделия
 		const sv_calc_proba = $('#sv-calculator-proba'); // Выберите пробу
@@ -15,9 +15,9 @@ const svCalculatorPawnshop = () => {
 			animate : 'slow',
 			range   : 'min',
 			min		: 1,
-			max		: period_max,
+			max		: args.calc_max,
 			step    : 1,
-			value   : period_default,
+			value   : args.calc_default,
 			slide   : function(event, ui) {
 				let ui_value = ui.value;
 				sv_calc_result_period.val( ui_value );
@@ -36,7 +36,7 @@ const svCalculatorPawnshop = () => {
 		svInputNumber( sv_calc_result_period, 'keyup' );
 
 		svInputMinMax( sv_calc_ves, 'keyup', 1, 999999 );
-		svInputMinMax( sv_calc_result_period, 'keyup', 1, period_max );
+		svInputMinMax( sv_calc_result_period, 'keyup', 1, args.calc_max );
 
 		svCalcInit( sv_calc_ves, 'keyup' );
 		svCalcInit( sv_calc_proba, 'change' );
@@ -52,7 +52,7 @@ const svCalculatorPawnshop = () => {
 					animate : 'slow',
 					range   : 'min',
 					min		: 1,
-					max		: period_max,
+					max		: args.calc_max,
 					step    : 1,
 					value   : ui_value,
 				});
@@ -68,7 +68,7 @@ const svCalculatorPawnshop = () => {
 			let ui_value = sv_calc_result_period.val();
 			let i_ves   = sv_calc_ves.val();
 			let i_proba = sv_calc_proba.val();
-			let percent = Number( pawnshop_result );
+			let percent = Number( args.calc_result );
 
 			let result_percent = Number( percent * ui_value );
 			let proba_ves      = ( i_proba * i_ves );
@@ -172,6 +172,3 @@ const svCalculatorPawnshop = () => {
 	}
 
 }
-document.addEventListener( 'DOMContentLoaded', () => {
-	svCalculatorPawnshop();
-});

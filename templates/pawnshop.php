@@ -7,7 +7,7 @@ $period_default = carbon_get_post_meta( $post_ID, 'sv_calc_pawnshop_period' );  
 
 // Процентная ставка
 $result = carbon_get_post_meta( $post_ID, 'sv_calc_pawnshop_result' );
-$result = str_replace( ',','.',$result );
+$result = str_replace( ',', '.',$result );
 
 $note = carbon_get_post_meta( $post_ID, 'sv_calc_pawnshop_note' );               // Примечание
 
@@ -30,8 +30,8 @@ $result_t = sv_calculator()->format_price( $result_d, 0, '', ' ' );
 
 $result_p = ( $result_d / 100 );
 $price_percent = ( $result_p * $result_a );
-$price_percent_t = sv_calculator()->format_price( $price_percent, 0, '', ' ' );
-$result_refund = sv_calculator()->format_price( ( $result_d + $price_percent ), 0, '', ' ' );
+$price_percent_t = sv_calculator()->format_price( $price_percent, 0, '' );
+$result_refund = sv_calculator()->format_price( ( $result_d + $price_percent ), 0, '' );
 ?>
 <div class="sv_calculator sv_calculator__wrapper">
 	<div class="sv_calculator__title">
@@ -134,7 +134,11 @@ $result_refund = sv_calculator()->format_price( ( $result_d + $price_percent ), 
 	</div>
 </div>
 <script>
-let period_max      = <?php echo intval($period_max ) ?>;
-let period_default  = <?php echo intval( $period_default ) ?>;
-let pawnshop_result = <?php echo $result ?>;
+document.addEventListener( 'DOMContentLoaded', () => {
+	svCalculatorPawnshop({
+		'calc_max'     : <?php echo intval( $period_max ) ?>,
+		'calc_default' : <?php echo intval( $period_default ) ?>,
+		'calc_result'  : <?php echo $result ?>
+	});
+});
 </script>
