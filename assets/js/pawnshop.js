@@ -106,6 +106,8 @@ const svCalculatorPawnshop = ( args ) => {
 	}
 
 	/**
+	 * Проверка на пустоту
+	 *
 	 * @param element
 	 * @param event
 	 */
@@ -115,6 +117,12 @@ const svCalculatorPawnshop = ( args ) => {
 		});
 	}
 
+	/**
+	 * Проверка только цифры
+	 *
+	 * @param element
+	 * @param event
+	 */
 	function svInputNumber( element, event ) {
 		element.on( event, function () {
 			if (this.value.match(/[^0-9]/g)) {
@@ -124,6 +132,14 @@ const svCalculatorPawnshop = ( args ) => {
 		});
 	}
 
+	/**
+	 * Проверка максимальное и минимальное число
+	 *
+	 * @param element
+	 * @param event
+	 * @param min
+	 * @param max
+	 */
 	function svInputMinMax( element, event, min, max ) {
 		element.on( event, function (e) {
 			let calc_value = this.value;
